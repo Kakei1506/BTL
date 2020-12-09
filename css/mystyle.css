@@ -1,12 +1,27 @@
+@font-face {
+  font-family: UTMCafetaRegular;
+  src: url(/font/utm_cafeta-webfont.woff);
+}
+
 body {
   background: url(/images/body_bg.gif) #6f6d72;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 a {
   color: #46e1ff;
   text-decoration: none;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /* custom thanh keo tha */
@@ -84,7 +99,7 @@ ol {
 
 .list-film > li {
   display: inline-block !important;
-  margin-right: calc(1% - 3px);
+  margin-right: calc(1% - 4px);
   margin-bottom: 10px !important;
   width: 24%;
 }
@@ -300,19 +315,21 @@ img {
   height: 46px;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #1a1a1a;
+  font: 20px/22px "UTMCafetaRegular";
 }
 
 .menu li {
   float: left;
   margin: 0;
   padding: 0;
+  margin-right: 25px;
 }
 
 .menu li a {
   float: left;
   display: block;
   color: #fff;
-  padding: 11px 15px 7px;
+  padding: 11px 15px 8px;
   margin-top: 4px;
   text-decoration: none;
 }
@@ -322,7 +339,18 @@ img {
   color: #dacb46;
 }
 
-.menu li:hover .sub-menu {display: block;}
+.category:hover .list-category {
+  display: block;
+}
+.nation:hover .list-nation {
+  display: block;
+}
+.movie:hover .list-movie {
+  display: block;
+}
+.seri:hover .list-seri {
+  display: block;
+}
 
 .sub-menu {
   position: absolute;
@@ -349,18 +377,93 @@ img {
   display: inline-block;
 }
 
-.sub li > a:hover{
+.sub li > a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
 }
 
 .sub a {
   background: none;
-    color: #fff;
-    padding: 7px 10px;
-    display: block;
-    float: none;
-    font: 13px/17px Arial,Helvetica,sans-serif;
-    text-shadow: 1px 1px 1px #1a1a1a;
-    text-transform: none;
+  color: #fff;
+  padding: 7px 10px;
+  display: block;
+  float: none;
+  font: 13px/17px Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 1px #1a1a1a;
+  text-transform: none;
+}
+
+.header {
+  background: #000 url(/images/header-bg.jpg) repeat-x;
+  height: 75px;
+}
+
+.header-logo {
+  margin-top: 10px;
+  float: left;
+}
+
+.logo {
+  background: url(/images/image.png) 0px -320px;
+  width: 260px;
+  height: 55px;
+  display: block;
+}
+
+.search {
+  float: left;
+  margin-top: 22px;
+  margin-left: 30px;
+}
+
+#search-input {
+  width: 225px;
+  outline: none;
+  border: 1px;
+  background-color: #303137;
+  border-radius: 100px;
+  color: #9f9f9f;
+  padding: 8px 40px 8px 15px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4),
+    1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+#search-submit {
+  background: url(/images/spotlight.png) no-repeat;
+  border: 0px;
+  width: 34px;
+  height: 32px;
+  margin-left: -34px;
+  top: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.user-header {
+  float: right;
+  margin-top: 20px;
+  color: #ddd;
+}
+
+.button-register {
+  background: transparent url(/images/image.png) no-repeat 0 0;
+  width: 79px;
+  height: 38px;
+  display: inline-block;
+  float: left;
+}
+
+.button-login {
+  background: transparent url(/images/image.png) no-repeat -79px 0;
+  width: 98px;
+  height: 38px;
+  display: inline-block;
+  float: left;
+}
+
+.button-login-with-fb {
+  background: transparent url(/images/image.png) -177px -1px;
+  width: 161px;
+  height: 38px;
+  display: inline-block;
 }
