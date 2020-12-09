@@ -467,3 +467,35 @@ img {
   height: 38px;
   display: inline-block;
 }
+
+.list-actor {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.profile-item {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+}
+
+.profile-image {
+  display: block;
+  width: 150px;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid #999;
+  border-radius: 3px;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #44e2ff;
+  margin-top: 15px;
+  display: block;
+  text-align: center;
+}
