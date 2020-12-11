@@ -499,3 +499,69 @@ img {
   display: block;
   text-align: center;
 }
+
+/* Trần anh */
+.register-form {
+  color: white;
+  background: #4f4e52 url(/images/item_bg.gif) repeat;
+  flex: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.col-left {
+  text-align: right;
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+}
+
+.col-right {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.row-input:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="text"] {
+  background-color: #333333;
+  width: 80%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid black;
+  outline: none;
+  color: white;
+}
+
+
+select {
+  background-color: #333333;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid black;
+  outline: none;
+  color: white;
+}
+
+.btn-submit {
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+
+.btn-submit:hover {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
